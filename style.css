@@ -1,0 +1,356 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(180, 173, 173);
+    padding: 22px;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .logo h1 {
+    font-family: GreatVibes;
+    color: #ffff;
+    font-size: 44px;
+    font-weight: 900; 
+}
+
+header .menu {
+    flex: 1;
+    
+}
+
+header:hover .menu {
+    animation-name: menu;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes menu {
+    from {
+        transform:translateY(-50px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+header .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header .menu ul li a {
+    font-family: NotoSans;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-image: url(./images/jazzinstruments.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffff;
+    padding: 50px 0 50px 0;
+}
+
+main .artists {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 30px; */
+}
+
+main .artists .artistf {
+    width: 300px;
+    height: 500px;
+    background-image:url(./images/bb_king.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid rgb(90, 87, 87);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .artists .artistf:hover {
+    border: 3px solid brown;
+}
+
+main .artists .artistf .infopack {
+    width: 298px;
+    height: 150px;
+    background-color: rgb(90, 87, 87);
+    border-radius: 0 0 20px 20px;
+    margin-top: 350px;
+    padding: 10px 0 0 10px;
+}
+
+main .artists .artistf:hover .infopack {
+    animation-name: infopack;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes infopack {
+    from {
+        transform:translateY(150px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+main .artists .artistf .infopack h1 {
+    font-family: NotoSans;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+main .artists .artistf .infopack p {
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+main .artists .artistf .infopack a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+main .artists .artistss {
+    width: 300px;
+    height: 500px;
+    background-image:url(./images/Coltrane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid rgb(90, 87, 87);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .artists .artistss:hover {
+    border: 3px solid brown;
+}
+
+main .artists .artistss .infopack {
+    width: 298px;
+    height: 150px;
+    background-color: rgb(90, 87, 87);
+    border-radius: 0 0 20px 20px;
+    margin-top: 350px;
+    padding: 10px 0 0 10px;
+}
+
+main .artists .artistss:hover .infopack {
+    animation-name: infopack;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes infopack {
+    from {
+        transform:translateY(150px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+main .artists .artistss .infopack h1 {
+    font-family: NotoSans;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+main .artists .artistss .infopack p {
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+main .artists .artistss .infopack a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+
+main .artists .artisth {
+    width: 300px;
+    height: 500px;
+    background-image:url(./images/Dave\ images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid rgb(90, 87, 87);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .artists .artisth:hover {
+    border: 3px solid brown;
+}
+
+main .artists .artisth .infopack {
+    width: 298px;
+    height: 150px;
+    background-color: rgb(90, 87, 87);
+    border-radius: 0 0 20px 20px;
+    margin-top: 350px;
+    padding: 10px 0 0 10px;
+}
+
+main .artists .artisth:hover .infopack {
+    animation-name: infopack;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes infopack {
+    from {
+        transform:translateY(150px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+main .artists .artisth .infopack h1 {
+    font-family: NotoSans;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+main .artists .artisth .infopack p {
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+main .artists .artisth .infopack a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(180, 173, 173);
+    padding: 22px; 
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+footer .logo {
+    flex: 1;
+}
+
+footer .logo h1 {
+    font-family: GreatVibes;
+    color: #ffff;
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+}
+
+footer .contacts {
+    flex: 1;
+}
+
+footer .contacts h1 {
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: 400;
+    color:#FFFFFF;
+}
+
+footer .contacts table {
+    border-collapse: collapse;   
+}
+
+footer .contacts table tr td {
+    font-family: NotoSans;
+    font-size: 14px;
+    font-weight: 400;
+    color:#FFFFFF;
+    padding: 8px 8px 8px 0; 
+    text-align: left; 
+}
+
+footer .contacts table tr td h1 {
+    font-family: NotoSans;
+    font-size: 14px;
+    font-weight: 400;
+    color:#FFFFFF; 
+    text-align: left;
+}
+
+footer .contacts table tr td a {
+    color: #fff;
+}
+
+footer .socials {
+    flex: 1;
+}
+
+footer .socials h1 {
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: 400;
+    color:#FFFFFF;
+    margin: auto;
+}
+
+footer .socials a {
+    font-size: 24px;
+    color: #ffff;
+    margin-right: 10px;
+    margin-bottom:20px;
+}
