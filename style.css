@@ -26,6 +26,12 @@ header .logo h1 {
     font-weight: 900; 
 }
 
+@media screen and (max-width: 550px){
+    header .logo h1 {
+        font-size: 30px;
+    }
+}
+
 header .menu {
     flex: 1;
     
@@ -83,6 +89,19 @@ main .artists {
     display: flex;
     justify-content: space-between;
     /* margin-bottom: 30px; */
+}
+
+@media screen and (max-width: 1024px) {
+    main .artists {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .artistf,
+    .artistss,
+    .artisth {
+        margin-bottom: 1rem;
+    }
 }
 
 main .artists .artistf {
@@ -288,8 +307,23 @@ footer {
     overflow: hidden;
 }
 
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 footer .logo {
     flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    footer .logo{
+        margin-bottom: 1rem;
+    }
 }
 
 footer .logo h1 {
@@ -300,8 +334,23 @@ footer .logo h1 {
     text-align: center;
 }
 
+@media screen and (max-width: 850px){
+    footer .logo h1{
+        font-size: 30px;
+    }
+}
+
 footer .contacts {
     flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    footer .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem 0;
+    }
 }
 
 footer .contacts h1 {
@@ -338,6 +387,14 @@ footer .contacts table tr td a {
 
 footer .socials {
     flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    footer .socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 footer .socials h1 {
